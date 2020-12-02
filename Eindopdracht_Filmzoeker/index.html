@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer type="text/javascript" src="movielist.js"></script>
+    <script defer type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body class="container">
+
+    <header class="header">
+        <h1 class="header__h1">Movie Finder</h1>
+        <p class="header__p">Find movies by scrolling, typing a name in the search bar or selecting one of the following
+            filters:</p>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__search--container">
+
+            <input type="text" placeholder="Search.." name="search" class="nav__search--input" id="searchbar">
+
+        </div>
+
+
+        <label for="showall" class="nav__label">
+            <input type="radio" id="showall" name="movieselector" value="Showall" class="hidden" checked>
+            Show all movies
+        </label>
+
+
+        <label for="newfilms" class="nav__label">
+            <input type="radio" id="newfilms" name="movieselector" value="newfilms" class="hidden">
+            New Films
+        </label>
+
+
+        <label for="avengers" class="nav__label">
+            <input type="radio" id="avengers" name="movieselector" value="Avengers" class="hidden">
+            Avengers
+        </label>
+
+        <br />
+
+        <label for="xmen" class="nav__label">
+            <input type="radio" id="xmen" name="movieselector" value="X-Men" class="hidden">
+            X-Men
+        </label>
+
+
+        <label for="princess" class="nav__label">
+            <input type="radio" id="princess" name="movieselector" value="Princess" class="hidden">
+            Princess
+        </label>
+
+        <label for="batman" class="nav__label">
+            <input type="radio" id="batman" name="movieselector" value="Batman" class="hidden">
+            Batman
+        </label>
+
+    </nav>
+
+    <div class="middle">
+        <ul class="container__list" id="listofmovies">
+
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__p">By Annemarie Visser</p>
+    </footer>
+</body>
+
+</html>
